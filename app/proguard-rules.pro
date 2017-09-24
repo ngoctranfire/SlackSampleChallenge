@@ -19,3 +19,17 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
+# Room
+-dontwarn android.arch.util.paging.CountedDataSource
+-dontwarn android.arch.persistence.room.paging.LimitOffsetDataSource
+
+-dontwarn com.google.errorprone.annotations.*
+
+# Okhttp Proguard
+-dontwarn okhttp3.**
+-dontwarn javax.annotation.**
+
+# Retrofit Pro-guard
+-dontwarn okio.**
+-dontwarn retrofit2.Platform$Java8
+-dontwarn javax.annotation.**
