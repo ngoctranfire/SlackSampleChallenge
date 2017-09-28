@@ -1,5 +1,6 @@
 package com.ngoctranfire.slacksamplechallenge.ui.users
 
+import com.ngoctranfire.slacksamplechallenge.domain.repository.UsersDataSource
 import com.ngoctranfire.slacksamplechallenge.domain.repository.UsersRepo
 import com.ngoctranfire.slacksamplechallenge.ui.users.model.UserProfileDisplayModel
 import com.ngoctranfire.slacksamplechallenge.ui.users.viewstate.UserListingDisplayState
@@ -18,7 +19,7 @@ import javax.inject.Inject
  * Ensures that we are making sure only one
  */
 class UsersListingViewModel @Inject constructor(
-        private val usersRepo: UsersRepo
+        private val usersRepo: UsersDataSource
 ): UsersListingVM() {
 
     private val listingDisplayStateSubject: BehaviorSubject<UserListingDisplayState> = BehaviorSubject.createDefault(UserListingDisplayState.DEFAULT())
