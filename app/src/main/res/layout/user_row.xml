@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/user_image"
+        android:layout_width="@dimen/user_image_small"
+        android:layout_height="@dimen/user_image_small"
+        android:contentDescription="@string/user_small_image"
+        android:layout_marginRight="@dimen/title_margin_left"
+        android:layout_marginEnd="@dimen/title_margin_left"
+        android:padding="@dimen/user_image_padding"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/real_name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/real_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/title_margin_left"
+        android:layout_marginStart="@dimen/title_margin_left"
+        android:maxLength="30"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/member_name"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/user_title"
+        app:layout_constraintLeft_toRightOf="@id/user_image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/title_margin_left"
+        android:layout_marginStart="@dimen/title_margin_left"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="@string/display_name"
+        android:textColor="@color/gray"
+        app:layout_constraintBottom_toBottomOf="@id/real_name"
+        app:layout_constraintLeft_toRightOf="@id/real_name"
+        app:layout_constraintTop_toTopOf="@id/real_name" />
+
+    <TextView
+        android:id="@+id/user_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:visibility="gone"
+        android:text="@string/position_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@id/real_name"
+        app:layout_constraintTop_toBottomOf="@+id/real_name" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/title_margin_left"
+        android:layout_marginStart="@dimen/title_margin_left"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="@string/status"
+        app:layout_constraintBottom_toBottomOf="@id/real_name"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toRightOf="@id/display_name"
+        app:layout_constraintTop_toTopOf="@id/real_name" />
+
+</android.support.constraint.ConstraintLayout>

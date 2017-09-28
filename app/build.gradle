@@ -40,6 +40,10 @@ dependencies {
 
     // Android Components
     implementation "com.android.support:appcompat-v7:$compatVersion"
+    implementation "com.android.support.constraint:constraint-layout:$constraintLayoutVersion"
+    implementation "com.android.support:design:$compatVersion"
+    implementation "com.android.support:recyclerview-v7:$compatVersion"
+
 
     // Architecture Components
     implementation "android.arch.lifecycle:runtime:$archCompVersion"
@@ -55,6 +59,11 @@ dependencies {
     kapt "com.google.dagger:dagger-compiler:$daggerVersion"
     implementation "com.google.dagger:dagger-android-support:$daggerVersion"
     kapt "com.google.dagger:dagger-android-processor:$daggerVersion"
+
+    // Glide
+    implementation "com.github.bumptech.glide:glide:$glideVersion"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glideVersion"
+    implementation'jp.wasabeef:glide-transformations:3.0.1'
 
     // Kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
@@ -82,7 +91,17 @@ dependencies {
     implementation "com.jakewharton.rxbinding2:rxbinding-appcompat-v7:$rxBindingVersion"
     implementation "com.jakewharton.rxbinding2:rxbinding-appcompat-v7-kotlin:$rxBindingVersion"
 
+    // Store -> For Repository Pattern
+    implementation "com.nytimes.android:cache3:$storeVersion"
+    implementation "com.nytimes.android:store3:$storeVersion"
+    implementation "com.nytimes.android:middleware3:$storeVersion"
+    implementation "com.nytimes.android:store-kotlin3:$storeVersion"
+
+
     // Timber
     implementation "com.jakewharton.timber:timber:$timberVersion"
+
+    //Testing
+    testImplementation "org.mockito:mockito-core:$mockitoVersion"
 
 }

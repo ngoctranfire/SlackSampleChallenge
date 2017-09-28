@@ -2,9 +2,15 @@ package com.ngoctranfire.slacksamplechallenge.ui.base
 
 import android.content.Intent
 import android.os.Bundle
+import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
+import com.ngoctranfire.slacksamplechallenge.ui.viewmodel.ViewModelFactory
+import dagger.android.AndroidInjector
+import dagger.android.DispatchingAndroidInjector
+import dagger.android.support.HasSupportFragmentInjector
 import timber.log.Timber
+import javax.inject.Inject
 
 /**
  * Created by ngoctranfire on 9/23/17.

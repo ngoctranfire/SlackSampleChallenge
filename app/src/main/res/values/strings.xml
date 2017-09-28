@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">SlackSampleChallenge</string>
+    <string name="user_small_image">User Small Image</string>
+    <string name="member_name">Real Name</string>
+    <string name="status_message">Status Message</string>
+    <string name="display_name">Display Name</string>
+    <string name="status">Status</string>
+    <string name="position_title">Position Title</string>
+
+    <string name="user_profile_image">User Profile Image</string>
+    <string name="error_fetch">Error trying to fetch team members</string>
+    <string name="field_value">Field Value</string>
+    <string name="field_key">Field Key</string>
+
+
+    <string name="email">Email</string>
+    <string name="time_zone">Timezone</string>
+    <string name="job_title">Job Title</string>
+    <string name="not_available">N/A</string>
 </resources>

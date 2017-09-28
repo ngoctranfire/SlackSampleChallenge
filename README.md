@@ -11,6 +11,8 @@ with the appropriate information about the users.
     creating activity scoped components.
 3. `RxJava2` to help with binding data streams and manipulating streams of data as well
 as handling Asynchronous operations.
+4. `Store` by New York Times to help with seamless data persistence to cache data if we fetched
+from the Network already.
 4. Takes advantage of `Android-architecture-components`
     * `Room` for ORM for easier handling of SQLite data persistence
     * `ViewModel` components provided by Life-cycle-components so that
@@ -20,4 +22,4 @@ as handling Asynchronous operations.
 6. Uses `Gson` to operate on data returned from Retrofit/OkHttp and represent
 the JSON responses as POJOS -> Plain Old Java Objects
 
-7. `Glide` as our image library
+7. `Glide` as our image loading library to simplify things
