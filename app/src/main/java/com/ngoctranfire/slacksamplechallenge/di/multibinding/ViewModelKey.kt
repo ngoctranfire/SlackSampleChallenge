@@ -9,7 +9,7 @@ import kotlin.reflect.KClass
  * Created by ngoctranfire on 9/23/17.
  */
 @MustBeDocumented
-@Target(AnnotationTarget.ANNOTATION_CLASS)
+@Target(AnnotationTarget.FUNCTION)
 @Retention(AnnotationRetention.RUNTIME)
 @MapKey
 annotation class ViewModelKey(val value: KClass<out ViewModel>)

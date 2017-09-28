@@ -4,6 +4,8 @@ import android.app.Application;
 
 import com.ngoctranfire.slacksamplechallenge.app.SlackChallengeApp;
 import com.ngoctranfire.slacksamplechallenge.di.module.ActivityBuilderModule;
+import com.ngoctranfire.slacksamplechallenge.di.module.NetworkModule;
+import com.ngoctranfire.slacksamplechallenge.di.module.RepositoryModule;
 import com.ngoctranfire.slacksamplechallenge.di.multibinding.ViewModelModule;
 import com.ngoctranfire.slacksamplechallenge.di.scopes.AppScope;
 import com.ngoctranfire.slacksamplechallenge.di.module.AppModule;
@@ -20,7 +22,9 @@ import dagger.android.AndroidInjectionModule;
         AndroidInjectionModule.class,
         ActivityBuilderModule.class,
         AppModule.class,
-        ViewModelModule.class
+        ViewModelModule.class,
+        NetworkModule.class,
+        RepositoryModule.class
 })
 public interface AppComponent {
     @Component.Builder

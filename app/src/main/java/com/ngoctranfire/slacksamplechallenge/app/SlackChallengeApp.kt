@@ -50,7 +50,7 @@ class SlackChallengeApp: Application(), HasActivityInjector {
 
         StrictMode.setVmPolicy(StrictMode.VmPolicy.Builder()
                 .detectAll()
-                .penaltyDeath()
+                .penaltyLog()
                 .build())
 
     }

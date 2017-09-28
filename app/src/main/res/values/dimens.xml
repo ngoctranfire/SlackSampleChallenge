@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="user_image_small">48dp</dimen>
+    <dimen name="user_image_padding">2dp</dimen>
+    <dimen name="user_image_margins">2dp</dimen>
+    <dimen name="title_margin_left">15dp</dimen>
+    <dimen name="user_view_margin_right">10dp</dimen>
+    <dimen name="user_row_spacing">3dp</dimen>
+    <dimen name="user_profile_image">200dp</dimen>
+    <dimen name="profile_real_name_size_big">20sp</dimen>
+    <dimen name="user_description_row_height">60dp</dimen>
+    <dimen name="profile_name_left_margin">20dp</dimen>
+    <dimen name="profile_name_bottom_margin">20dp</dimen>
+</resources>

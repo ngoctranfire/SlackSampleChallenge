@@ -1,6 +1,6 @@
 package com.ngoctranfire.slacksamplechallenge.di.module;
 
-import com.ngoctranfire.slacksamplechallenge.di.module.activity.UsersListingModule;
+import com.ngoctranfire.slacksamplechallenge.di.module.activity.main.MainActivityModule;
 import com.ngoctranfire.slacksamplechallenge.ui.users.UsersListingActivity;
 
 import dagger.Module;
@@ -12,7 +12,7 @@ import dagger.android.ContributesAndroidInjector;
 @Module
 abstract public class ActivityBuilderModule {
 
-    @ContributesAndroidInjector(modules = UsersListingModule.class)
+    @ContributesAndroidInjector(modules = MainActivityModule.class)
     abstract UsersListingActivity listingActivity();
 
 }

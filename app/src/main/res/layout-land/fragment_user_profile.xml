@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/gray"
+            android:contentDescription="@string/user_profile_image"
+            android:scaleType="centerCrop"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/display_name_group"/>
+
+        <TextView
+            android:id="@+id/real_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/member_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/profile_real_name_size_big"
+            android:layout_marginLeft="@dimen/profile_name_left_margin"
+            android:layout_marginStart="@dimen/profile_name_left_margin"
+            android:layout_marginBottom="@dimen/profile_name_bottom_margin"
+            app:layout_constraintLeft_toLeftOf="@id/profile_image"
+            app:layout_constraintBottom_toBottomOf="@id/profile_image" />
+
+        <LinearLayout
+            android:id="@+id/display_name_group"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/user_description_row_height"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/title_margin_left"
+            android:layout_marginStart="@dimen/title_margin_left"
+            android:gravity="center_vertical"
+            app:layout_constraintLeft_toRightOf="@id/profile_image"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/time_zone_group">
+
+            <TextView
+                android:id="@+id/display_name_field"
+                android:text="@string/display_name"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/display_name_value"
+                android:text="@string/field_value"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/time_zone_group"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/user_description_row_height"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            app:layout_constraintLeft_toLeftOf="@id/display_name_group"
+            app:layout_constraintTop_toBottomOf="@id/display_name_group"
+            app:layout_constraintBottom_toTopOf="@id/email_group">
+
+            <TextView
+                android:id="@+id/time_zone_key"
+                android:text="@string/time_zone"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/time_zone_value"
+                android:text="@string/field_value"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:src="@drawable/line_divider">
+            </View>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/email_group"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/user_description_row_height"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            app:layout_constraintLeft_toLeftOf="@id/display_name_group"
+            app:layout_constraintTop_toBottomOf="@id/time_zone_group"
+            app:layout_constraintBottom_toTopOf="@id/job_title_group">
+
+            <TextView
+                android:id="@+id/email_key"
+                android:text="@string/email"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/email_value"
+                android:text="@string/field_value"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/job_title_group"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/user_description_row_height"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            app:layout_constraintLeft_toLeftOf="@id/display_name_group"
+            app:layout_constraintTop_toBottomOf="@id/email_group"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/job_title_key"
+                android:text="@string/job_title"
+                android:textColor="@color/gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/job_title_value"
+                android:text="@string/field_value"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>
